@@ -11,6 +11,7 @@ env/
 # Environment variables / secrets
 .env
 .env.*
+!.env.example
 
 # Jupyter
 .ipynb_checkpoints/
@@ -30,8 +31,8 @@ ml/models/*.h5
 ml/models/*.keras
 
 # Data files
-ml/data/*.csv
-ml/data/*.xlsx
+ml/data/*
+!ml/data/.gitkeep
 
 # Logs
 *.log
